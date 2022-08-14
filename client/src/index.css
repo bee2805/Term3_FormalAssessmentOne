@@ -189,8 +189,7 @@ form{
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
-  animation: fadeIn 1s;
-  animation: fadeOut 1s;
+  animation: fadeIn 0.5s;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -201,10 +200,6 @@ form{
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
-}
-@keyframes fadeOut {
-  100% { opacity: 1; }
-  0% { opacity: 0; }
 }
 
 .modal{
