@@ -1,0 +1,232 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  color: #2b2b2b;
+  margin: 0;
+  margin-top: 20%;
+  margin-bottom: 2%;
+}
+
+p{
+  font-family: 'Cabin', sans-serif;
+  color: #2b2b2b;
+  margin: 0;
+  margin-bottom: 10%;
+}
+
+input{
+  border-radius: 20px;
+  padding: 3% 5%;
+  border: none;
+  outline: none;
+  color: #2b2b2b;
+}
+
+select{
+  border-radius: 20px;
+  padding: 2.8% 5%;
+  border: none;
+  outline: none;
+  color: #2b2b2b;
+}
+
+button{
+  width: 45%;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  color: #e1e1e1;
+  background-color: #0FA7C9;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover{
+  background-color: #0888A5;
+}
+
+form{
+  margin-bottom: 10%;
+}
+
+.App{
+  width: 100%;
+  height: 100vh;
+  background-image: url('assets/background.svg');
+  background-position: center;
+  background-size: cover;
+}
+
+/* ============================================================== */
+/* left block */
+.profiles{
+  width: 60%;
+  padding: 2%;
+  padding-bottom: 0px;
+  height: auto;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* ============================================================== */
+/* profile cards */
+.ProfileCard{
+  width: 23%;
+  height: auto;
+  margin-bottom: 3%;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow:
+  rgba(17, 17, 26, 0.1) 0px 4px 16px,
+  rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.username{
+  width: 100;
+  height: 25px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(24px);
+  color: #2b2b2b;
+  margin: 0;
+  padding: 5%;
+}
+
+.username h3{
+  /* background-color: rgba(255, 255, 255); */
+  font-family: 'Montserrat', sans-serif;
+  float: left;
+  margin: 0;
+}
+
+.bio{
+  padding: 5%;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(24px);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #2b2b2b;
+}
+
+.bio p{
+  margin: 0;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-align: left;
+}
+
+.ProfileCard button{
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+/* ============================================================== */
+/* right block */
+.add_profiles{
+  width: 32%;
+  padding: 2%;
+  height: 92.6vh;
+  float: left;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(24px);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow:
+  rgba(17, 17, 26, 0.1) 0px 4px 16px,
+  rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+#username, #name, #surname, #incomePM{
+  width: 38%;
+}
+
+#gender, #interestedIn{
+  width: 47.9%;
+}
+
+#username, #age, #surname, #height, #incomePM{
+  margin-right: 3%;
+  margin-bottom: 3%;
+}
+
+#occupation{
+  width: 89%;
+  margin-bottom: 3%;
+}
+
+#eye_color{
+  width: 98%;
+  margin-bottom: 3%;
+}
+
+#age{
+  width: 12%;
+}
+
+#height, #weight{
+  width: 25%;
+}
+
+/* ============================================================== */
+/* edit modal */
+.EditProfile{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 1s;
+  animation: fadeOut 1s;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: -2%;
+  margin-left: -2%;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadeOut {
+  100% { opacity: 1; }
+  0% { opacity: 0; }
+}
+
+.modal{
+  width: 40%;
+  padding: 3%;
+  height: 70vh;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(25px);
+  border-radius: 20px;
+}
+
+/* icon: https://www.flaticon.com/search?word=close&order_by=4 */
+.close{
+  width: 20px;
+  height: 20px;
+  background-image: url('assets/close.png');
+  background-size: cover;
+  background-position: center;
+  float: right;
+  cursor: pointer;
+}
+
+.close:hover{
+  background-image: url('assets/close_hover.png');
+}
